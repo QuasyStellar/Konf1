@@ -92,3 +92,7 @@ username@emulator:/$ cd folder
 username@emulator:folder/$ ls
 what.txt
 ```
+
+## Тестирование
+
+![Тестирование](/tests.png)
