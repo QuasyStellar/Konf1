@@ -58,54 +58,37 @@ ExForDel1.txt
 root
 ```
 
-- Команда cat выводит содержимое указанного файла в выбранной директории
+- Команда cp копирует указанный файл в выбранную директории
 
 - Пример:
 
 ```bash
-> cat ExForDel.txt
-HAHAHHAHAHAHA
+> cp just.txt folder/
+> File 'just.txt' copied to 'folder/'.
 ```
 
-- Команда echo выводит текст введённый после команды echo
+- Команда tree древовидно отображает структуру директории
 
 Пример:
 
 ```bash
-> echo Hello hell
-Hello hell
+> tree
+> |-- just.txt
+> |-- folder
 ```
 
-- Команда exit завершает работу оболочки. Каждая выполненная команда записывается в файл emulator.txt. Формат лога:
+- Команда exit завершает работу оболочки.
 
-```txt
-user1@my_pc:/$ ls
-zxc
-user1@my_pc:/$ cd zxc
-```
 
 ## Пример использования
 ```bash
->user1@my_pc:/$ cd zxc
+username@emulator:/$ ls
+folder
+just.txt
+username@emulator:/$ cd ..
 
->user1@my_pc:zxc/$ cd root
+username@emulator:/$ cd folder
 
->user1@my_pc:zxc/root/$ ls
-
-Test1
-Test2
-Test3
->user1@my_pc:zxc/root/$ cd Test1
-
->user1@my_pc:zxc/root/Test1/$ cat ExForDel.txt
-HAHHAHAHAHHAHAHA
->user1@my_pc:zxc/root/Test1/$ exit
-Exiting emulator...
+username@emulator:folder/$ ls
+what.txt
 ```
-
-## Тестирование
-![Тест 1\2](https://i.imgur.com/9qHOYmT.png)
-![Тест 2\2](https://i.imgur.com/ARxbxwJ.png)
-
-## Скриншот работы
-![Скриншот](https://i.imgur.com/UnalKr4.png)
